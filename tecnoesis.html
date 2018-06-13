@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Travel</title>
+	<link rel="stylesheet" type="text/css" href="tecnoesis.css">
+	<link rel="icon" type="image/x-iocn" href="plane.png">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+	<!--VIEW IT FOR 100% ZOOM-->
+
+	<!--code for scrolling down-->
+		<script type="text/javascript">
+			document.body.onkeyup = function(e) {
+    		var code = e.keyCode;
+    		if(code === 40) {	
+        	window.scrollBy(0,window.innerHeight);
+    		}
+    		else if(code === 38) {
+    			window.scrollBy(0,-window.innerHeight);
+    		}
+			};
+		</script>
+ 	<!--header-->
+	<header class="top" id="headm">
+			
+			
+	
+		<h1 style="font-size: 45px; display: inline;margin-left: 50px;margin-bottom: 20px;z-index: 5px;font-family: sans-serif;position: sticky;top: 0px;">TRAVEL</h1>
+		<h5 style="display: inline;margin-bottom: 20px;font-family: sans-serif;position: sticky;top: 0px;">.COM</h5>
+		<img src="black.jpg" class="line">
+		<img src="train logo.jpg" class="logo">
+
+		<form class="log">
+			USERNAME<br>
+			<input type="text" name="username"><br>
+			PASSWORD<br>
+			<input type="password" name="pass"><br>
+			<button>Login</button>
+		 </form>
+	</header>
+
+	
+	<div id="container">
+         
+
+		<div id="navi" class="menu">
+			<a href="#top" class="hm btn activ" >HOME</a><br><br>
+		    <a href="#bookticket" class="book btn ">BOOKING</a><br><br>
+		    <a href="#aboutus" class="abt btn"> ABOUT</a>
+		</div>
+		<!--To change the active class-->
+		<script>
+			var header = document.getElementById("navi");
+			var btns = header.getElementsByClassName("btn");
+			for (var i = 0; i < btns.length; i++) {
+  			btns[i].addEventListener("click", function() {
+   			 var current = document.getElementsByClassName("activ");
+  		    current[0].className = current[0].className.replace(" activ", "");
+   			 this.className += " activ";
+ 			 });
+			}
+		</script>
+			<!--To change the images-->
+		<script type="text/javascript">
+		    setInterval((function(images)
+		    {
+			 var index = -1, changeImg;
+			 changeImg = function()
+			 {
+				index = (index + 1) % images.length;
+				document.getElementById('container').style.backgroundImage = 'url(' + images[index] + ')';
+			 };
+			changeImg();
+			return changeImg;
+		    }(['planes1.jpg','chair.jpg','bus3.jpg','busdark.jpg'])), 3000);
+	    </script>
+
+		<!--To get the side bar of travelling-->
+		<div id="nav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">BUS</a>
+          <a href="#">TRAIN</a>
+          <a href="#">PLANE</a>
+          <a href="#">METRO</a>
+        </div>
+        <br><br><br><br><br><br>
+        <span style="font-size:35px;cursor:pointer;color: white;background-image:url('travelback.jpg');font-family: arial;" onclick="openNav()">&nbspTravel by&nbsp&#9776;</span>
+
+
+ 	 <script>
+		function openNav() {
+		    document.getElementById("nav").style.width = "250px";
+		}
+
+		function closeNav() {
+		    document.getElementById("nav").style.width = "0";
+		}
+    </script>
+    <br>
+    <br><br><br>
+    <br><br><br>
+    <br><br>
+   	    <span class="animationl">
+	    	<strong>TRAVEL  &nbspACROSS</stro
+	    </span>
+	    <br>
+	    <span class="animationr">
+	    	<strong>THE &nbspWORLD</strong>
+	    </span>
+    <div class="down" style="font-size: 18px;color: white;">
+    	<a href="#bookticket"><img src="arrow.png" style="width: 40px;height: 40px;margin-left: 650px;margin-top: 60px;"></a>
+    </div>
+
+	</div>
+	
+	<div id="bookticket" style="height: 700px;margin-bottom: 0px;">
+		
+
+		<video autoplay muted loop id="myVideo">
+  				<source src="places.mp4" type="video/mp4">
+  
+		</video>
+		<form class="content" style="z-index: 3;">
+			<fieldset style="height: 585px; z-index: 3;">
+			<legend style="font-size: 30px; z-index: 3;
+			">Book Your Ticket</legend>
+			First&nbspName:&nbsp&nbsp
+			<input type="text" name="name" placeholder="Your name..">
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+			Last&nbspName:&nbsp&nbsp
+			<input type="text" name="lname" placeholder="last name.." ><br><br>
+			From:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		    &nbsp
+			<input type="text" name="from">
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+			To:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp
+			<input type="text" name="to"><br><br>
+			Phone No.&nbsp&nbsp
+			<input type="Phone" name="num"><br><br>
+			Gender:&nbsp&nbsp
+			<input type="radio" name="male">&nbspMALE&nbsp&nbsp
+			<input type="radio" name="fe">&nbspFEMALE<br><br>
+			Pay via:&nbsp&nbsp
+			<input type="radio" name="cash" checked>&nbsp&nbspCash<br>&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="radio" name="card">&nbsp&nbspCard<br>&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="radio" name="net">&nbsp&nbspNet&nbspBanking<br><br>
+			Travel via:&nbsp&nbsp
+			<input type="checkbox" name="train" checked>&nbsp&nbspTrain<br>&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="checkbox" name="plane">&nbsp&nbspPlane<br>&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="checkbox" name="bus">&nbsp&nbsp&nbspBus<br><br>
+			&nbsp&nbsp&nbsp&nbsp
+			<input type="submit" value="Submit"><br><br>
+			<p style="font-family: arial;text-indent: 150px;letter-spacing: .2px;font-size: 20px;margin-left: 60px;margin-right: 60px;margin-bottom: 50px;">&quotWhen we get out of the glass bottle of our ego and when we escape like the squirrels in the cage of our personality and get into the forest again, we shall shiver with cold and fright. But things will happen to us so that we don't know ourselves. Cool, unlying life will rush in.&quot<br>
+				<i>&nbsp&nbsp--D.H. Lawrence</i>	
+			<div class="down">
+    			<a href="#aboutus"><img src="arrow.png" style="z-index: 8; display: inline-block; width: 40px;height: 40px;margin-left: 600px;bottom: 940px;"></a>
+    		</div>
+			</p>
+			
+			</fieldset>
+		</form>
+		
+	</div>
+	<div  id="aboutus" style="background-color: black;margin-top: -2px;">
+	<div class="slideshow">
+
+		<div class="slides fade" style="height: 600px;">
+ 		 <div class="number">1 / 3</div>
+ 			 <img src="colo.jpg" style="width:750px ;height:540px;margin-left: 120px;" class="img1">
+ 			 <div class="middle" style="z-index: 3;">
+    		    <div class="imgtext" style="z-index: 3;"><b>Colosseum Italy</b></div>
+  		     </div>
+		</div>
+
+		<div class="slides fade" style="height: 600px;">
+		  <div class="number">2 / 3</div>
+		  <img src="lotus.jpg" style="width:750px;height:540px;margin-left: 120px;" class="img1">
+		  <div class="middle" style="z-index: 3;">
+    		  <div class="imgtext" style="z-index: 3;"><b>Lotus Temple</b></div>
+  		  </div>
+		</div>
+
+		<div class="slides fade" style="height: 600px;">
+		  <div class="number">3 / 3</div>
+		  <img src="taj2.jpg" style="width:750px; height:540px;margin-left: 120px;" class="img1">
+		  <div class="middle" style="z-index: 3;">
+    		  <div class="imgtext" style="z-index: 3;"><b>Taj Mahal</b></div>
+  		  </div>
+		</div>
+
+		<a class="prev" onclick="next(-1)">&#10094;</a>
+		<a class="next" onclick="next(1)">&#10095;</a>
+		
+   </div>
+   
+   <br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="cur(1)"></span> 
+	  <span class="dot" onclick="cur(2)"></span> 
+	  <span class="dot" onclick="cur(3)"></span> 
+	</div><br>
+	<marquee style="color: white;"><b>Press Up Arrow key to move to previous page..</b><br><b>Press Down Arrow key to move to next page..</b><br>
+	Copyright © 2018 Travel Ltd. All rights reserved.
+	</marquee>
+	<br><br>
+	<a href="https://www.google.co.in/search?q=fb&rlz=1C1SQJL_enIN783IN783&oq=fb&aqs=chrome..69i57j69i60l3j69i59l2.650j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><img src="fb.png" style="width: 40px;height: 40px; margin-left: 600px;"></a>
+	<a href="https://www.google.co.in/search?q=instagram&rlz=1C1SQJL_enIN783IN783&oq=instagram&aqs=chrome..69i57j69i60l3j0l2.7053j0j8&sourceid=chrome&ie=UTF-8" target="_blank"><img src="ins.png" style="width: 40px;height: 40px; margin-left: 10px;"></a>
+	<a href="https://www.google.co.in/search?q=twitter&rlz=1C1SQJL_enIN783IN783&oq=twitter&aqs=chrome..69i57j69i59j0l4.3012j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
+	<img src="twit.png" style="width: 45px;height: 45px;margin-left: 10px;">
+	</a>
+	</div>
+	<!--The sliding of images-->
+	<script>
+	var Index = 1;
+	show(Index);
+
+	function next(n) {
+	  show(Index = Index + n);
+	}
+
+	function cur(n) {
+	  show(Index = n);
+	}
+
+	function show(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("slides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {Index = 1}    
+	  if (n < 1) {Index = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[Index-1].style.display = "block";  
+	  dots[Index-1].className += " active";
+	}
+	</script>
+	
+	
+</body>
+</html>

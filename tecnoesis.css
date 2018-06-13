@@ -1,0 +1,262 @@
+body{
+  position: relative;
+	margin: 0px;
+	margin-top: 0px;
+  background-size: cover;
+}
+.top{
+	background-color:#2ECC71;
+	margin-top: 0px;
+	height: 100px;
+	background-image: url('b.jpg');
+}
+.log{
+  height: 30px;
+	margin-top: 0px;
+	display: inline-block;
+	margin-left: 800px;
+
+}
+.line{
+	margin-left: 10px;
+	height: 40px;
+	width: 2px;
+}
+.logo{
+	margin-left: 10px;
+	height: 35px;
+	width: 30px;
+}
+#container{
+	height: 550px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.menu{
+	z-index: 10;
+	height: 40px;
+	display: inline-block;
+	margin-left: 1270px;
+  position: fixed;
+  top: 100px;
+  font-size: 25px;
+}
+
+
+.hm{
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+}
+
+
+.book{
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  margin-left: -42px;
+}
+
+.abt{
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  margin-left: -10px;
+}
+
+
+.menu a:hover{
+  background-color: #4A708B;
+}
+
+.activ {
+  text-decoration: underline;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+#myVideo {
+     position: relative;
+     z-index: -2;
+    right: 0;
+    top: -60px;
+    
+    max-width: 1350px; 
+    max-height: 800px;
+     height: auto;
+     width: auto;
+  
+}
+.content {    
+     position: relative;
+    
+   bottom: 765px; 
+   background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+   min-width: 1300px; 
+    max-height: 680px;
+    padding: 20px;
+    height: auto;
+     width: auto;
+}
+
+.slideshow{
+	background-color: black;
+  max-width: 1000px;
+  position: relative;
+  margin-top: 0px;
+  margin-left: 170px;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.5s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: grey;
+}
+.number {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.7s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.imgtext {
+  background-color:black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.slides:hover .middle {
+  opacity: 1;
+}
+.slides:hover .img1 {
+  opacity: 0.3;
+}
+.middle {
+  transition: .4s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.tabcontent .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.animationl{
+  z-index: 3;
+  font-size: 50px;
+  margin-left: 200px;
+  height: 80px;
+  width: 100px;
+  opacity: 0;
+  animation-name: aleft;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  font-family: sans-serif;
+  color: #330000   ;
+}
+@keyframes aleft{
+  from{opacity: 0;margin-left: 350px;}
+  to{opacity: 1;margin-left:450px;}
+
+}
+.animationr{
+  color: #330000  ;
+  z-index: 3;
+  font-family: ;
+  font-size: 50px;
+  margin-left: 1000px;
+  height: 80px;
+  width: 100px;
+  opacity: 0px;
+  animation-name: aright;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes aright{
+  from{opacity: 0;margin-left: 600px;}
+  to{opacity: 1;margin-left:500px;}
+}
